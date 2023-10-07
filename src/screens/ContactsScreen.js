@@ -26,7 +26,8 @@ const ContactsScreen = ({navigation})=>
             }
         )
     },[])
-    //sort
+  //sort
+  
     const contactsSorted = contacts.sort((a, b) =>a.name.localeCompare(b.name));
     const renderContact = ({item }) => {
         const { name, avatar, phone } = item;
